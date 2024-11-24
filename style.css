@@ -32,8 +32,6 @@ body {
 
 .painel-bar-acima-itens img {
     margin-top: 10px;
-    width: 42px;
-    border-radius: 50px;
 }
 .painel-bar-abaixo-itens {
     display: flex;
@@ -92,14 +90,16 @@ body {
     padding-left: 10px;
     margin-right: 10px;
 }
+.conversas-pesquisa-icon {
+    width: 33px;
+}
 
 .conversas-pesquisa-area input {
     margin-left: 20px;
     border: none;
     background-color: #202C33;
     outline: 0;
-    font-size: 20px;
-    font-weight: 100;
+    font-size: 16px;
 }
 
 .conversas-filtro-area {
@@ -118,19 +118,10 @@ body {
     background-color: #0A332C;
     color: #04A879;
 }
-/* 
-.conversas-arquivadas-area {
-    display: flex;
-    margin-left: 30px;
-    height: 60px;
-    align-items: center;
-    justify-content: space-between;
-} */
-
 
 .conversas-arquivadas-area {
     display: flex;
-    margin-left: 30px;
+    margin-left: 10px;
     height: 60px;
     align-items: center;
     justify-content: space-between;
@@ -140,8 +131,7 @@ body {
     content: "";
     position: fixed;
     border-bottom: solid 1px #222D34;
-    margin-top: 55px;
-    margin-left: 40px;
+    margin: 55px 0 0 60px;
     width: 400px;
 }
 
@@ -149,19 +139,19 @@ body {
     content: "";
     position: fixed;
     border-bottom: solid 1px #222D34;
-    margin-top: 55px;
-    margin-left: 60px;
+    margin: 55px 0 0 60px;
     width: 395px;
 }
 .conversas-arquivadas-area-esq {
     display: flex;
+    align-items: center;
 }
 .conversas-arquivadas-icon {
-    width: 25px;
+    width: 50px;
 }
 .conversas-arquivadas-titulo {
-    margin-left: 15px;
     font-size: 18px;
+    margin-left: 10px;
 }
 .conversas-arquivadas-quant {
     font-size: 14px;
@@ -266,16 +256,16 @@ body {
 
 .chat-input-area {
     display: flex;
-    padding: 0 20px;
-    justify-content: space-between;
+    padding: 0 10px;
     align-items: center;
+    justify-content: space-between;
     height: 65px;
     background-color: #202C33;
 }
 
 .chat-input-text-area {
     background-color: #2A3942;
-    width: 80%;
+    width: 100%;
     height: 42px;
     display: flex;
     align-items: center;
@@ -288,4 +278,32 @@ body {
     border: none;
     outline: 0;
     font-size: 16px;
+}
+.chat-input-area img {
+    width: 50px;
+}
+.chat-area-mensagens {
+    display: flex;
+    width: 100%;
+}
+.mensagem-enviada {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse
+}
+.mensagem-recebida {
+    display: flex;
+    width: 100%;
+    flex-direction: row
+}
+.chat-mensagem-area {
+    margin: 0 40px;
+}
+.mensagem {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    margin-top: 10px;
+    background-color: #202C33;
+    border-radius: 10px;
 }

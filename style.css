@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #ced1d2;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    display: flex;
+    padding: 20px 20px 0 20px;
+    min-height: 95vh;
+    background-color: #262524;
+}
+
+/*          PAINEL BAR          */
+
+.painel-bar{
+    background-color: #202C33;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 62px;
+    min-height: 100%;
+}
+
+.painel-bar-acima-itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.painel-bar-acima-itens img {
+    margin-top: 10px;
+    width: 42px;
+    border-radius: 50px;
+}
+.painel-bar-abaixo-itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.meu-perfil {
+    margin-bottom: 15px;
+    width: 32px;
+    border-radius: 50px;
+}
+
+.icon-config {
+    margin-bottom: 20px;
+    width: 25px;
+    border-radius: 50px;
+}
+
+
+/*          CONVERSAS BAR          */
+
+.conversas-painel-bar {
+    background-color: #111B21;
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+    min-height: 100%;
+}
+
+.conversas-painel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.conversas-header-titulo {
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.conversas-header-icon {
+    width: 25px;
+    margin-right: 22px;
+}
+
+.conversas-pesquisa-area {
+    background-color: #202C33;
+    border-radius: 8px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+.conversas-pesquisa-area input {
+    margin-left: 20px;
+    border: none;
+    background-color: #202C33;
+    outline: 0;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.conversas-filtro-area {
+    display: flex;
+}
+
+.conversas-filtro-area button {
+    margin: 10px 0 0 10px;
+    background-color: #202C33;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+.conversas-filtro-area .filtro-button-actived {
+    background-color: #0A332C;
+    color: #04A879;
+}
+/* 
+.conversas-arquivadas-area {
+    display: flex;
+    margin-left: 30px;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+
+.conversas-arquivadas-area {
+    display: flex;
+    margin-left: 30px;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conversas-arquivadas-area::after {
+    content: "";
+    position: fixed;
+    border-bottom: solid 1px #222D34;
+    margin-top: 55px;
+    margin-left: 40px;
+    width: 400px;
+}
+
+.conversas-area::after {
+    content: "";
+    position: fixed;
+    border-bottom: solid 1px #222D34;
+    margin-top: 55px;
+    margin-left: 60px;
+    width: 400px;
+}
+.conversas-arquivadas-area-esq {
+    display: flex;
+}
+.conversas-arquivadas-icon {
+    width: 25px;
+}
+.conversas-arquivadas-titulo {
+    margin-left: 15px;
+    font-size: 18px;
+}
+.conversas-arquivadas-quant {
+    font-size: 14px;
+    margin-right: 14px;
+    color: #04A879;
+}
+
+.conversas {
+    margin-top: 20px;
+}
+.conversas-area {
+    display: flex;
+    margin-left: 15px;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+.conversa-perfil-icon {
+    width: 40px;
+}
+.conversa-perfil-titulo-area {
+    margin-left: 13px;
+    display: flex;
+    flex-direction: column;
+}
+.conversas-perfil-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conversa-perfil-icon {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    width: 50px;
+    border-radius: 50px;
+}
+.conversa-perfil-titulo {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.conversa-perfil-subtitulo {
+    font-size: 12px;
+    color: #8696A0;
+}
+.conversa-perfil-horario {
+    font-size: 14px;
+    margin-right: 14px;
+    color: #8696A0;
+}
+
+
+/*          CONVERSAS BAR          */
+
+.conversa-section {
+    background-image: url('/imgs/chat-background.png');
+    background-color: #0B141A;
+    width: 100%;
+}
+
+.conversa-header {
+    background-color: #202C33;
+    display: flex;
+    justify-content: space-between;
+    height: 65px;
+}
+
+.conversa-header-itens-esquerda {
+    display: flex;
+    align-items: center;
+}
+
+.chat-perfil-img {
+    width: 40px;
+    border-radius: 50px;
+    margin-left: 18px;
+}
+.chat-titulo {
+    margin-left: 16px;
+    font-weight: 600;
+}
+
+.conversa-header-itens-direita {
+    display: flex;
+    align-items: center;
+}
+.chat-header-icon {
+    margin-right: 25px;
+    width: 25px;
+}
